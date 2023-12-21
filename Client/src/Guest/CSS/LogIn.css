@@ -1,0 +1,178 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #fa6400;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.btn-close {
+    background-color: white;
+    margin: 5px 5px;
+}
+
+.close-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-body h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-data {
+    margin-top: 30px;
+}
+
+.input-data {
+    position: relative;
+}
+
+.input-data label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 0;
+    margin-left: 30px;
+    color: #fff;
+    transition: 500ms;
+    font-size: 1rem;
+    pointer-events: none;
+}
+
+.input-data input {
+    background-color: transparent;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px 0;
+    padding-left: 30px;
+    border: 1px solid var(--main-color);
+    outline: none;
+}
+
+.fa-envelope{
+    font-size: 1rem;
+    position: absolute;
+    top: 20%;
+    left: 2%;
+}
+
+.fa-lock{
+    font-size: 1rem;
+    position: absolute;
+    top: 20%;
+    left: 2%;
+}
+
+input:active~label,
+input:focus~label,
+input:valid~label {
+    top: -20px;
+    left: -30px;
+    color: var(--main-color);
+    font-size: 16px;
+}
+
+
+
+
+.login-btn {
+    background-color: var(--main-color) !important;
+    padding: 2px 15px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 1px rgba(163, 235, 177, 0.3);
+    text-align: center;
+    color: white;
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+.login-btn:hover{
+    padding: 5px 20px;
+    box-shadow: 0px 0px 10px 5px rgba(163, 235, 177, 0.3);
+    font-size: 0.8rem
+}
+.login-btn:active{
+    background-color: var(--main-color);
+}
+
+
+
+.forgot-password{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: rgb(83, 81, 81);
+}
+
+
+.fa-eye{
+    font-size: 1rem;
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.fa-eye-slash{
+    font-size: 1rem;
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.fa-eye-slash:active,
+.fa-eye:active{
+}
+
+@media  only screen and (min-width: 350px), (max-width: 768){
+    
+    .modal-content { 
+        width: 95%;
+        top: 100px;
+    }
+    
+    .modal-body h2 {
+        font-size: 1.5rem;
+    }
+    
+    .form-data {
+        margin-top: 20px;
+    }
+    
+    input:active~label,
+    input:focus~label,
+    input:valid~label {
+        font-size: 10px;
+    }
+    
+    .login-btn {
+        background-color: var(--main-color);
+        padding: 2px 15px;
+        border: none;
+        text-transform: uppercase;
+        border-radius: 15px;
+        box-shadow: 0px 0px 5px 1px rgba(163, 235, 177, 0.3);
+        text-align: center;
+        color: white;
+        font-size: 1em;
+        margin-top: 10px;
+    }
+}
+

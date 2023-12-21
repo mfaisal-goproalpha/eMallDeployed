@@ -1,0 +1,241 @@
+:root{
+    --main-color: #fa6400;
+    --search-input: #ebebeb;
+}
+/* CSS */
+.registration-btns button{
+  background-color: var(--main-color);
+  border: none;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  min-height: 2rem;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: baseline;
+  width: auto;
+  margin: 5px 0px;
+}
+
+.registration-btns button:hover,
+.registration-btns button:focus {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  border: 1px solid var(--main-color);
+}
+
+.registration-btns button:hover {
+  transform: translateY(-1px);
+}
+
+.registration-btns button:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+
+.home{
+    color: var(--main-color) !important;
+}
+
+.dropdown:hover{
+    background-color: var(--main-color);
+
+}
+
+.dropdown a:hover{
+    color: white !important;
+}
+
+.search input{
+    background-color: var(--search-input)!important;
+    border: 1px solid #3a3939;
+    color: #827f7f;
+    border-right: none;
+    outline: none;
+    width: 250px;
+}
+
+.search button,
+.location button{
+    background-color: var(--main-color);
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 0px;
+    transition: 0.4s;
+}
+
+.search button:hover{
+    background-color: var(--search-input);
+    color: var(--main-color);
+    border: 1px solid  #3a3939;
+    border-left: none;
+    border-radius: 0px;
+}
+
+form select{
+    border: 1px solid #3a3939;
+    border-right: none;
+    color: #827f7f;
+    width: 50px;
+    height: 40px;
+    padding: 0px 10px;
+    color:  #827f7f;
+    outline: none;
+    appearance: none;
+}
+
+.location input{
+    border: 1px solid #3a3939;
+    color: #827f7f;
+    border-right: none;
+    outline: none;
+    width: 100px;
+    height: 40px;
+
+}
+
+form select:focus, .location input:focus{
+    border: 1px solid var(--main-color);
+   
+}
+.location button:hover{
+    border: 1px solid var(--main-color);
+    border-radius: 0px;
+    color: #827f7f;
+}
+
+.projects{
+    box-shadow: none;
+}
+.projects div h1{
+    color: #d57535;
+
+
+}
+
+.subscribe{
+    min-height: auto;
+}
+
+.card-image-top{
+    height: 200px;
+}
+
+.projects .card .card-body{
+    height: 100px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+
+/* Footer */
+
+footer .col-lg-4 img{
+    width: 40%;
+}
+
+footer .col-lg-4 p{
+    font-size: 0.75rem;
+}    
+
+footer .widget h4 {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: -.01em;
+    margin-top: 0;
+    margin-bottom: 1.9rem;
+}
+
+.widget h4{
+    font-size: 1rem !important;
+    margin-bottom: 10px !important;
+}
+
+.widget ul{
+    list-style: none;
+    padding: 0px;
+}
+
+.widget ul li{
+    margin: 5px 0px;
+}
+
+
+
+.widget ul li a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 0.90rem;
+}
+
+
+.widget ul li a:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 0.1rem;
+    background-color: #FFA200;
+    transform: scaleX(0, 1);
+    transform-origin: right center;
+    transition: transform 1s ease;
+}
+.telegram,
+.telegram a{
+   color: #777 !important;
+}
+
+.widget ul li a:hover{
+    color: #F57224;
+}
+
+
+
+.telegram a:hover{
+    color: #F57224 !important;
+}
+
+.social-icons{
+    display: flex;
+}
+
+.social-icons li{
+    margin: 0px 5px !important;
+}
+
+.footer-bottom{
+    border-top: 1px solid #ebebeb;
+}
+.footer-bottom p{
+    color: #777;
+}
+
+
+
+/* Single Product */
+
+.add-to-cart{
+    background-color: var(--main-color);
+    color: white;
+}
+
+.main-image{
+    height: 100% ;
+}
+
+.main-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: center;
+}
+
